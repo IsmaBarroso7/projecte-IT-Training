@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>ITtraining</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/estils.css" />
+  </head>
+
+  <body>
+    <header>
+      <span class="vermell">IT</span>
+      <span class="groc">training</span>&nbsp;
+      <span class="verd">SQL</span>
+    </header>
+
+    <main>
+      <article>
+        <form name="formulari">
+
+          <section class="elementVisible" id="pregunta-1">
+            <h2>Pregunta #1</h2>
+            <div class="enunciat">
+              <p>Quines són les clausules obligatòries a una comanda SQL?</p>
+            </div>
+            <div class="respostes">
+              <div>
+                <input type="radio" id="resp_1_1" value="PrimeraOpcio" name="resposta1" onclick="pregunta(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta(this)">SELECT</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_1_2" value="SegonaOpcio"  name="resposta1" onclick="pregunta(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta(this)">FROM</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_1_3" value="TerceraOpcio" name="resposta1" onclick="pregunta(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta(this)">SELECT i FROM</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_1_4" value="QuartaOpcio" name="resposta1" onclick="pregunta(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta(this)">SELECT, FROM i WHERE</label>
+              </div>
+            </div> <!-- FINAL <div class="respostes">-->
+            <button type="button" id="boto-1" value="boto-1" onclick="passaSeguent(this)">Següent >></button>
+             <!-- disabled -->
+             <!-- <button onmouseover="encima()" onmouseout="fuera()"  type="button" id="boto-1" onclick="mostrar_3();"></button> -->
+          </section> <!-- FINAL <section id="pregunta-#"> -->
+
+          <section class="elementOcult" id="pregunta-2">
+            <h2>Pregunta #2</h2>
+            <div class="enunciat">
+              <p>MySQL es...</p>
+            </div>
+            <div class="respostes">
+              <div>
+                <input type="radio" id="exemple-2-1" />
+                &nbsp;&nbsp;
+                <label for="exemple-1">Un lenguaje de programación </label>
+              </div>
+              <div>
+                <input type="checkbox" id="exemple-2-2" />
+                &nbsp;&nbsp;
+                <label for="exemple-2">Una técnica para escribir programas confiables</label>
+              </div>
+              <div>
+                <input type="text" id="exemple-2-3" name="resposta-1" placeholder="Lorem ipsum dolor sit amet" />
+              </div>
+              <div>
+                <select id="exemple-2-4">
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                </select>
+              </div>
+            </div> <!-- FINAL <div class="respostes"> -->
+            <button>Següent >></button>
+          </section>  <!-- FINAL <section id="pregunta-#"> -->
+
+          <section class="elementOcult" id="pregunta-3">
+            <h2>Pregunta #3</h2>
+            <div class="enunciat">
+              <p>BENFICA SHAKTAR JUVE BARÇA LAS SIGLAS MYSQL</p>
+            </div>
+            <div class="respostes">
+              <div>
+                <input type="radio" id="exemple-3-1" />
+                &nbsp;&nbsp;
+                <label for="exemple-1">Lorem ipsum dolor sit amet</label>
+              </div>
+              <div>
+                <input type="checkbox" id="exemple-3-2" />
+                &nbsp;&nbsp;
+                <label for="exemple-2">Lorem ipsum dolor sit amet</label>
+              </div>
+              <div>
+                <input type="text" id="exemple-3-3" name="resposta-1" placeholder="Lorem ipsum dolor sit amet" />
+              </div>
+              <div>
+                <select id="exemple-3-4">
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                  <option>Lorem ipsum dolor sit amet</option>
+                </select>
+              </div>
+            </div> <!-- FINAL <div class="respostes"> -->
+            <button>Següent >></button>
+          </section>  <!-- FINAL <section id="pregunta-#"> -->
+
+          <section class="elementOcult" id="pregunta-4">
+            <h2>Pregunta #4</h2>
+            <div class="enunciat">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
+            </div>
+
+            <div class="respostes">
+              <div>
+                <input type="radio" id="exemple-4-1" />
+                &nbsp;&nbsp;
+                <label for="exemple-1">Lorem ipsum dolor sit amet</label>
+              </div>
+              <div>
+                <input type="checkbox" id="exemple-4-2" />
+                &nbsp;&nbsp;
+                <label for="exemple-2">Lorem ipsum dolor sit amet</label>
+              </div>
+              <div>
+                <input type="text" id="exemple-4-3" name="resposta-1" placeholder="Lorem ipsum dolor sit amet" />
+              </div>
+              <div>
+                <select id="exemple-4-4">
+                  <option>Una base de datos</option>
+                  <option>INSERT INTO </option>
+                  <option>INSERT NEW </option>
+                  <option> ADD</option>
+                </select>
+              </div> <!-- FINAL <div class="respostes"> -->
+            <button>Següent >></button>
+          </section>  <!-- FINAL <section id="pregunta-#"> -->
+
+          </form>  <!-- FINAL <form> -->
+      </article>  <!-- FINAL <article> -->
+    </main>  <!-- FINAL <main> -->
+
+    <footer>
+      <span class="vermell">Designed and developed by DAW2© 2020-2021 All rights reserved</span>
+    </footer>
+    <script src="./js/preguntes.js"></script>
+  </body>
+</html>
