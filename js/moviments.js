@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 let preguntaEnCurs = 0;
 let preguntaUltima = 3;
 
@@ -22,7 +23,26 @@ function marcaComResposta(){
 
 function passaSeguent(objRebut){
 // debugger;
+=======
+preguntaEnCurs = 0;
 
+for (var i = 0; i <= llistaPreguntes.length; i++) {
+  arrBoolRespostes.push(false);
+};
+
+function marcaComResposta(){
+  arrBoolRespostes[preguntaEnCurs]=true;
+
+  let idBotoAHabilitar = "btSeg0" + (preguntaEnCurs + 1);
+  document.getElementById(idBotoAHabilitar).disabled = false;
+
+  // document.getElementById("myBtn").disabled = true;
+  // id="btAnt01" 
+  // id="btSeg01" 
+}
+>>>>>>> Stashed changes
+
+function passaSeguent(objRebut){
   if (preguntaEnCurs == preguntaUltima){
     alert("Ets a la darrera pregunta!" + preguntaEnCurs + " de " + preguntaUltima);
     preguntaEnCurs --;
