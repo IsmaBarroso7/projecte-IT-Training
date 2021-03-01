@@ -1,29 +1,3 @@
-<<<<<<< Updated upstream
-let preguntaEnCurs = 0;
-let preguntaUltima = 3;
-
-let arrBoolRespostes = [];
-
-for (var i = 0; i <= preguntaUltima; i++) {
-  arrBoolRespostes.push(false);
-};
-
-function marcaComResposta(){
-  // debugger;
-  alert("Has modificat el valor!");
-  arrBoolRespostes[preguntaEnCurs]=true;
-
-  let idBotoAHabilitar = "btSeg0" + (preguntaEnCurs + 1);
-  document.getElementById(idBotoAHabilitar).disabled = false;
-
-  // document.getElementById("myBtn").disabled = true;
-  // id="btAnt01" 
-  // id="btSeg01" 
-}
-
-function passaSeguent(objRebut){
-// debugger;
-=======
 preguntaEnCurs = 0;
 
 for (var i = 0; i <= llistaPreguntes.length; i++) {
@@ -40,7 +14,6 @@ function marcaComResposta(){
   // id="btAnt01" 
   // id="btSeg01" 
 }
->>>>>>> Stashed changes
 
 function passaSeguent(objRebut){
   if (preguntaEnCurs == preguntaUltima){
